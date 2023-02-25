@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /*reset các margin và padding mặc định*/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* áp dụng hành vi => witdth lúc này bao gồm cả border */
+      }
+      .box {
+        /* display: block; */
+        /* display: none; Ẩn phần tử -hidden */
+        /* Màu nền cho box */
+        background-color: rgb(15, 223, 15);
+        /* content */
+        /* chỉ định chiều rộng hiển thị nội dung */
+        width: 300px;
+        /* Mặc định, chiều cao sẽ tự co gian khớp với nội dung */
+        /* padding - phần lề xung quanh nội dung */
+        /* thuộc tính viết tắt -shorthand */
+        /* padding: top right bottom left;
+            padding: all; */
+        padding: 30px;
+
+        /* border */
+        /* Kiểu viền-kích thước viền,màu viền -vị trí-Bo viền */
+        border: 10px solid gray;
+        border-radius: 10px;
+        /* margin - khoảng cách giữa các phần tử */
+        margin-bottom: 10px;
+        /* overflow? */
+        /* box-shadow? */
+
+        /* standard color -Tên màu */
+        /* Hỗ trợ 16tr màu */
+        /* HEX - #rrggb- hệ cơ số 16 (0-9) */
+        /* RGB -rgb(red, greed, blue) */
+        /* RGBA (opacity) rgba(red, green ,blue,opacity) */
+        /* Tìm hiểu thêm một số Pseudo Class(active,focus,foocus-within) */
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, est
+        excepturi provident doloribus dicta voluptate tempore temporibus
+        nesciunt incidunt, ipsum, quidem eum?
+      </div>
+      <div class="box">
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+        voluptatem, deserunt atque dolore mollitia labore iusto quo nam
+        obcaecati doloremque voluptate hic provident!
+      </div>
+      <div class="box">
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+        voluptatem, deserunt atque dolore mollitia labore iusto quo nam
+        obcaecati doloremque voluptate hic provident!
+      </div>
+    </div>
+  </body>
+</html>

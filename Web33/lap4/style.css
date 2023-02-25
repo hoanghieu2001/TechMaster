@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  height: 400px;
+  background-color: aqua;
+  /* Đi kèm với tất cả những thuộc tính khác của flexbox */
+
+  flex-direction: row; /*columns */
+  /* Chỉnh hướng sắp xếp phần tử  */
+  /* Căn chỉnh vị trí phần tử theo trục main */
+  justify-content: center; /* flex-end center, flex-start, space-between*/
+  /* Căn chỉnh vị trí phần tử theo kích thước cross */
+  /* align-items: stretch; */
+  /* Cho phép phần tử con xuống dòng */
+  flex-wrap: wrap;
+
+  /* Căn chỉnh kích thước và vị trí dòng(line) */
+  align-items: stretch;
+
+  /* khoảng cách căn chỉnh giữa các item */
+  gap: 20px;
+}
+
+.item {
+  background-color: red;
+  color: #fff;
+  padding: 20px;
+  width: 500px;
+  height: 100px;
+}

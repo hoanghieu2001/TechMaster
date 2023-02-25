@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: baomoi, AvenirNextCondensed-Medium, HelveticaNeue-CondensedBold,
+    "sans-serif-condensed", Calibri, Corbel, Liberation Sans Narrow, Lohit Odia,
+    sans-serif;
+}
+#menu {
+  width: 1200px;
+  height: 60px;
+}
+
+nav {
+  width: 1040px;
+  height: 60px;
+  margin: 0 250px;
+  position: fixed;
+}
+nav ul {
+}
+
+nav li {
+  width: 25%;
+  height: 60px;
+  background-color: rgb(19, 207, 198);
+  list-style: none;
+  float: right;
+  padding: 15px 0;
+  text-align: center;
+}
+nav li:hover {
+  background-color: #75d6ec;
+}
+nav li > a {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+}
+nav ul li a:hover {
+  color: #000;
+}
+
+#main {
+  width: 1100px;
+  /* background-color: red; */
+  /* float: right; */
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  margin-left: 250px;
+}
+
+#banner {
+  height: 1000px;
+  width: 700px;
+
+  /* background-color: aquamarine; */
+}
+
+#header {
+  height: 500px;
+  width: 700px;
+}
+#header .title {
+  color: black;
+  font-size: 30px;
+  font-weight: 300;
+}
+#header .title:hover,
+.content:hover,
+p:hover {
+  color: rgb(21, 202, 212);
+  cursor: pointer;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+.list-item {
+  width: 700px;
+  height: 200px;
+  /* text-align: center; */
+  /* background-color: red; */
+}
+.item1,
+.item2,
+.item3 {
+  max-width: 33.333%;
+  max-height: 100px;
+  float: right;
+  box-sizing: border-box;
+}
+
+#content {
+  width: 400px;
+  height: 1000px;
+  /* background-color: rgb(49, 181, 58); */
+  margin: 10px;
+}
+#content .box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+  width: 330px;
+  height: 95px;
+  padding-top: 12px;
+  line-height: 1.6rem;
+  border-bottom: 1px solid rgb(217, 211, 211);
+}
+#content .box1 > p,
+#content .box2 > p,
+.box3 > p,
+.box4 > p,
+.box5 > p,
+.box6 > p,
+.box7 > p {
+  width: 256px;
+  height: 49px;
+  float: right;
+  font-family: baomoi, AvenirNextCondensed-Medium, HelveticaNeue-CondensedBold,
+    "sans-serif-condensed", Calibri, Corbel, Liberation Sans Narrow, Lohit Odia,
+    sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  box-sizing: border-box;
+  opacity: 0.6;
+}
