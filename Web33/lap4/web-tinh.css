@@ -583,3 +583,57 @@ footer {
   padding: 80px 0px 60px;
   text-align: left;
 }
+
+.img-footer {
+  width: 109px;
+  height: 77px;
+  color: #007bff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 auto;
+}
+.list-footer{
+  width: 500px;
+  height: 27px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+}
+.list-footer ul{
+  display: flex;
+  margin-top: 20px;
+
+}
+.list-footer ul li{
+  margin: 0px auto;
+}
+i.fa-brands{
+  width: 35px;
+  height: 14px;
+  text-align: center;
+}
+.icon-footer{
+  width: 130px;
+  height: 27px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+p.title-footer{
+  color:
+#888888;
+font-family:
+Roboto;
+font-size:
+13px;
+font-weight:
+300;
+line-height:
+27px;
+text-align:
+center;
+text-transform:
+uppercase;
+}
