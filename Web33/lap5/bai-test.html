@@ -6,89 +6,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .header{
-            display: flex;
-        }
-        .sec-nav ul{
-            display: flex;
-        }
-        li{
-            list-style: none;
-            
-        }
-        li a {
-            text-decoration: none;
-            display: flex;
-            padding: 25px 20px;
-            text-align: center;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        width: 1310px;
+        display: flex;
+        margin: 0 auto;
+      }
+      .logo > img {
+        width: 156px;
+        height: 50px;
+      }
+      .sec-nav ul {
+        display: flex;
+      }
+      li {
+        list-style: none;
+      }
+      li a {
+        text-decoration: none;
+        display: flex;
+        padding: 25px 20px;
+        text-align: center;
+      }
 
+      .sec-banner {
+        width: 1310px;
+        height: 290px;
+        display: flex;
+        margin: 0 auto;
+      }
+      .banner {
+        width: 980px;
+        height: 290px;
+      }
+      .list-columns {
+        margin-left: 10px;
+      }
+      .columns {
+        width: 320px;
+        height: 90px;
+        background-color: rgb(50, 7, 220);
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-top: 22px;
+        padding-bottom: px;
+      }
+      .columns > h3 {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+      }
+      .columns >span{
+        color: #ffff;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 200px;
+      }
+      .sec-title h3 {
+        width: 178px;
+        height: 38px;
+        color: #b91c1c;
+        font-family: Nunito;
+        font-size: 23px;
+        line-height: 37.5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-left: 104px;
+        margin-top: 34px;
+      }
+      .container {
+        width: 1310px;
+        height: 331px;
+        /* position: relative; */
+        /* top: 190px;
+        right: -700px; */
+        margin: 0 auto;
+        display: flex;
+      }
+      .item {
+        width: 215px;
+        height: 322px;
+        /* border: 1px solid; */
+        margin-right: 5px;
+      }
+      .item:hover .chap {
+        background-color: #9d174d;
+        border-radius: 2.5px;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 2.5px 10px;
+      }
+      .item:hover .title {
+        /* width:190px ;
+        height: 72px; */
+        background: rgba(234, 108, 144, 0.3);
+        font-weight: 500;
 
-        .container{
-            position:relative; 
-            top:190px;
-            right: -700px;
-        }
-        .title {
-            width: 190px;
-            height: 72px;
-        }
-        .chap{
-            width: 71px;
-            height: 26px;
-            position: relative;
-            top: -300px;
-            left: 10px;
-            color: #ffff;
-            background-color: #4d4848;
-            text-align: center;
-            padding-top: 7px;
-        }
-        .title{
-            position: relative;
-            top: -120px;
-            left: 10px;
-            color: #ffff;
-            
+        color: #ffffff;
+        /* display: grid; */
+        font-size: 16px;
+        /* grid-template-columns: 190px; */
+        /* grid-template-rows: 72px; */
+        /* line-height: 21px; */
+        /* padding: 10px; */
+      }
+      .item .img {
+        width: 210px;
+        height: 322px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
 
-        }
-
+      .title span {
+        /* background-color: #9d174d; */
+        background: rgba(77, 72, 72, 0.1);
+        width: 210px;
+        height: 50px;
+        font-size: 16px;
+      }
+      .chap {
+        width: 86px;
+        height: 26px;
+        position: relative;
+        top: -300px;
+        left: 10px;
+        color: #ffff;
+        background-color: #4d4848;
+        text-align: center;
+        padding-top: 5px;
+      }
+      .title {
+        /* background-color: #9d174d; */
+        width: 210px;
+        height: 120px;
+        position: relative;
+        top: -135px;
+        /* left: px; */
+        color: #ffff;
+        line-height: 24px;
+        text-align: center;
+      }
+      .end {
+        width: 210px;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        /* background: rgba(77, 72, 72,0.5); */
+      }
     </style>
   </head>
   <body>
     <main>
-        <div class="header">
-            <div class="logo">
-                <img src="/Web33/lap5/logo_v8.png" alt="">
-            </div>
-            <div class="sec-nav">
-                <ul>
-                    <li><a href="">ANIME</a></li>
-                    <li><a href="">MOVIE</a></li>
-                    <li><a href="">ƯU ĐÃI</a></li>
-                    <li><a href="">TRUYỆN</a></li>
-                    <li><a href="">BXH</a></li>
-                </ul>
-            </div>
+      <div class="header">
+        <div class="logo">
+          <img src="/Web33/lap5/logo_v8.png" alt="" />
         </div>
-        <section>
-            <div class="banner">
-                <img src="/Web33/lap5/tokyreveger.jpg" alt="">
-            </div>
-        </section>
-
-
-
-      <div class="container">
-        <div class="img"><img src="/Web33/lap5/anh.jpg" alt="" /></div>
-        <div class="chap">Chap17</div>
-        <div class="title">
-          <span
-            >Saikyou Onmyouji no Isekai Tenseiki: Geboku no Youkai-domo ni
-            Kurabete Monster ga Yowasugirunda ga</span
-          >
+        <div class="sec-nav">
+          <ul>
+            <li><a href="">ANIME</a></li>
+            <li><a href="">MOVIE</a></li>
+            <li><a href="">ƯU ĐÃI</a></li>
+            <li><a href="">TRUYỆN</a></li>
+            <li><a href="">BXH</a></li>
+          </ul>
         </div>
       </div>
+      <section>
+        <div class="sec-banner">
+          <div class="banner">
+            <img src="/Web33/lap5/tokyreveger.jpg" alt="" />
+          </div>
+          <div class="list-columns">
+            <div class="columns">
+              <h3>Ưu đãi</h3>
+              <span>Dành cho sinh viên</span>
+            </div>
+            <div class="columns">
+              <h3>Bảng Xếp Hạng</h3>
+              <span>Anime được xem nhiều nhất</span>
+            </div>
+            <div class="columns">
+              <h3>Bộ Sưu Tập</h3>
+              <span>Anime theo chủ đề</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sec-title">
+          <h3>Truyện tranh</h3>
+        </div>
+        <div class="container">
+          <div class="item">
+            <div class="img">
+              <img
+                src="/Web33/lap5/9f5bf2f4e9b2d3ae_3555242d7b4177b5_40402167273074159674.jpg"
+                alt=""
+              />
+            </div>
+            <div class="chap">Chap 59</div>
+            <div class="title">
+              <span class="end"
+                >Saikyou Onmyouji no Isekai Tenseiki: Geboku no Youkai-domo ni
+                Kurabete Monster ga Yowasugirunda ga</span
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="/Web33/lap5/2.jpg" alt="" />
+            </div>
+            <div class="chap">Chap 141</div>
+            <div class="title">
+              <span class="end">Kubo-san wa Mob wo Yurusanai</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="/Web33/lap5/3.jpg" alt="" />
+            </div>
+            <div class="chap">Chap 1076</div>
+            <div class="title">
+              <span class="end">One Piece</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="/Web33/lap5/anh.jpg" alt="" />
+            </div>
+            <div class="chap">Chap 17</div>
+            <div class="title">
+              <span class="end"
+                >Saikyou Onmyouji no Isekai Tenseiki: Geboku no Youkai-domo ni
+                Kurabete Monster ga Yowasugirunda ga</span
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="/Web33/lap5/5.jpg" alt="" />
+            </div>
+            <div class="chap">Chap 12</div>
+            <div class="title">
+              <span class="end">Isekai Cheat Kaitakuki</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="/Web33/lap5/6.jpg" alt="" />
+            </div>
+            <div class="chap">Chap 31</div>
+            <div class="title">
+              <span class="end">Code: Nostra</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

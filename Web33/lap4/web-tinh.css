@@ -42,19 +42,37 @@ li a {
   text-align: left;
   text-transform: uppercase;
 }
+.btn2:hover {
+  background-color:#ff817e;
+  color: #f3f3f3;
+}
+li:hover a{
+  color:#ff817e;
+}
+.btn:hover span{
+  color: #020000;
+}
+a.btn-round:hover{
+  /* color: #0000; */
+  background-color: #020000;
+}
 
 .banner {
   margin-left: 190px;
   margin-right: 190px;
 }
 .china-rose {
+  width: 60px;
+
   position: relative;
   left: 243px;
   bottom: 500px;
 }
-.jasmine{
+.jasmine {
+  width: 60px;
   position: relative;
-  right: 135px;
+  left: 1085px;
+  bottom: 100px;
 }
 .title {
   width: 1140px;
@@ -156,12 +174,15 @@ button {
   text-transform: uppercase;
   margin: 0 5px;
 }
+.btn3:hover span{
+  color: #ff817e;
+}
 
 .bgr > img {
   height: 704px;
   width: 659px;
   position: relative;
-  right: -220px;
+  right: -100px;
   top: -146px;
 }
 .sec-heading {
@@ -203,12 +224,15 @@ h3.sec-title {
   text-align: center;
 }
 .sec-heading > p {
+  width: 920px;
+  height: 81px;
   color: #888888;
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
   line-height: 27px;
   text-align: center;
+  margin: 0 auto;
 }
 .btn-round {
   width: 170px;
@@ -223,15 +247,19 @@ h3.sec-title {
   padding: 20px 15px;
   text-align: center;
   text-transform: uppercase;
-  margin: 70px 485px;
+  margin: 0px 485px;
 }
 a.btn {
   text-decoration: none;
 }
 section {
-  width: 1504px;
+  width: 1140px;
   height: 500px;
   /* border: solid 1px; */
+  /* margin: 0 auto; */
+}
+section.data-selected{
+  margin: 0 auto;
 }
 .list-item {
   display: flex;
@@ -239,7 +267,7 @@ section {
   gap: 5px;
 }
 .item > img {
-  width: 376px;
+  width: 377px;
   height: 450px;
 }
 
@@ -290,7 +318,8 @@ section {
 .columns {
   width: 350px;
   height: 574px;
-  border: solid 1px;
+  /* border: solid 1px; */
+  
 }
 
 .columns-img {
@@ -417,6 +446,7 @@ img.thumb {
 
 .appointment {
   height: 501px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
