@@ -47,6 +47,15 @@ li a {
   margin-left: 190px;
   margin-right: 190px;
 }
+.china-rose {
+  position: relative;
+  left: 243px;
+  bottom: 500px;
+}
+.jasmine{
+  position: relative;
+  right: 135px;
+}
 .title {
   width: 1140px;
   height: 380px;
@@ -54,6 +63,18 @@ li a {
   justify-content: space-between;
   gap: 50px;
   margin-top: 68px;
+}
+.title1 {
+  width: 540px;
+}
+.title1 > h2 {
+  color: #1e2528;
+  font-family: Rufina;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 75px;
+  margin: 0px 0px 25px;
+  text-align: left;
 }
 .box1 {
   height: 380px;
@@ -594,46 +615,37 @@ footer {
   text-align: center;
   margin: 0 auto;
 }
-.list-footer{
+.list-footer {
   width: 500px;
   height: 27px;
   margin: 0 auto;
   margin-bottom: 36px;
-
 }
-.list-footer ul{
+.list-footer ul {
   display: flex;
   margin-top: 20px;
-
 }
-.list-footer ul li{
+.list-footer ul li {
   margin: 0px auto;
 }
-i.fa-brands{
+i.fa-brands {
   width: 35px;
   height: 14px;
   text-align: center;
 }
-.icon-footer{
+.icon-footer {
   width: 130px;
   height: 27px;
   display: flex;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-p.title-footer{
-  color:
-#888888;
-font-family:
-Roboto;
-font-size:
-13px;
-font-weight:
-300;
-line-height:
-27px;
-text-align:
-center;
-text-transform:
-uppercase;
+p.title-footer {
+  color: #888888;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
 }

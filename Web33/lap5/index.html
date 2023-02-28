@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Web33/themify/themify-icons-font/themify-icons.css">
+      <path
+        fill-rule="evenodd"
+        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+      />
+    </svg>
+    <title>Position</title>
+    <style>
+      body {
+      }
+      .box {
+      }
+      .box--red {
+        background-color: red;
+      }
+      .box--blue {
+        background-color: blue;
+      }
+      .box--relative {
+        /* chỉ áp dụng được tối đa là 2 thuộc tính và tối ưu tiên ở gocd trên bên trái */
+        /* Thường dùng làm gốc cho các phần tử con là chính */
+        position: relative;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+
+        /* Không ảnh hưởng tới những thẻ xung quanh */
+        /* Căn theo vị trí ban đầu */
+        /* Mặc định nó nằm ở layer cao hơn */
+      }
+      .box--fixed {
+        background-color: pink;
+        position: fixed;
+        top: 100px;
+        right: 100px;
+        left: 100px;
+        bottom: 100px;
+        /*Width tự động co kéo cho vừa nội dung*/
+        /* Nó ảnh hưởng tới các phần tử xung quanh(những pt xung quanh sẽ coi nhưng không có thẻ nào ở đấy) */
+        /* áp dụng được 4 thuộc tính(chỉ áp dụng được khi không có thuộc tính width/height) */
+      }
+      .box--absolute {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .back-to-stop .button {
+        
+        width: 60px;
+        height: 60px;
+        background-color: #0d7dfc;
+        color: #fff;
+        line-height: 60px;
+        margin: 0 0 15px;
+        font-size: 26px;
+        position: fixed;
+        right: 24px;
+        bottom: 120px;
+        border-radius: 50%;
+      }
+      .back-to-stop .text{
+        position: absolute;
+        right: 70px;
+        white-space: nowrap;
+        line-height: 60px;
+        bottom: 120px;
+        display: none;
+      }
+      .back-to-stop:hover .text{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box box--red box--relative">Relative</div>
+    <div class="box box--blue">Static(normal)</div>
+    <div class="box box--pink box--fixed">Fixed</div>
+    <div class="box box--blue">Static</div>
+    <div class="box box--relative">Thẻ cha</div>
+    <div class="box box--absolute">Thẻ con(absolute)</div> -->
+
+    <div class="back-to-stop">
+        <div class="button">
+            <i class="ti-arrow-up"></i>
+        </div>
+        <i class="text">back-to-stop</i>
+    </div>
+  </body>
+</html>
