@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Document</title>
     <style>
       * {
@@ -31,6 +32,44 @@
         display: flex;
         padding: 25px 20px;
         text-align: center;
+        /* border-radius: 40%;
+        border: 1px solid; */
+      }
+.sec-search{
+    width: 655px;
+    height: 50px;
+    display: flex;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.search{
+    width: 320px;
+    height: 30px;
+}
+#name{
+    /* padding-right: 10px; */
+    width: 320px;
+    height: 30px;
+    border-radius: 20px;
+    /* opacity: 0.7; */
+}
+
+
+      i{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 20px;
+        background-color: rgb(219, 213, 213);
+        text-align: center;
+        padding: 7px;
+      }
+      i.fa-info{
+        margin-left: 172px;
+        margin-right: 10px;
+      }
+      i.fa-user{
+        margin-left: 10px;
       }
 
       .sec-banner {
@@ -61,7 +100,7 @@
         font-weight: 500;
         line-height: 30px;
       }
-      .columns >span{
+      .columns > span {
         color: #ffff;
         font-size: 14px;
         line-height: 21px;
@@ -169,7 +208,7 @@
     <main>
       <div class="header">
         <div class="logo">
-          <img src="/Web33/lap5/logo_v8.png" alt="" />
+          <img style="margin-top:10px;" src="/Web33/lap5/logo_v8.png" alt="" />
         </div>
         <div class="sec-nav">
           <ul>
@@ -179,6 +218,14 @@
             <li><a href="">TRUYỆN</a></li>
             <li><a href="">BXH</a></li>
           </ul>
+        </div>
+        <div class="sec-search">
+          <div class="search">
+            <input id="name" type="text" placeholder="Tìm kiếm" />
+          </div>
+          <i class="fa-sharp fa-solid fa-info"></i>
+          <i class="fa-solid fa-lightbulb"></i>
+          <i class="fa-solid fa-user"></i>
         </div>
       </div>
       <section>
