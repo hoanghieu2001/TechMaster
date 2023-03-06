@@ -198,7 +198,7 @@ a:hover{
 }
 
 .hero-item{
-    /* margin-top: 188px; */
+    margin-bottom: 280px;
     /* position: \; */
 }
 .heading-4 {
@@ -322,4 +322,8 @@ left;
     text-align: center;
     margin-bottom: 40px;
     opacity: 0.6;
+}
+.socal-media-heading{
+    margin-bottom: 130px;
+    margin-top: 120px;
 }
