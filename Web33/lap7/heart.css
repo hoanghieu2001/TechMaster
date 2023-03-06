@@ -1,0 +1,66 @@
+    <div class="heart">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+
+* {
+  box-sizing: border-box;
+}
+.heart {
+    position:relative;
+    width:400px;
+    height:400px;
+    transform:scale(1) rotate(-45deg);
+    animation: bupbup 2s linear infinite;
+}
+@keyframes bupbup {
+    0% {
+        transform:scale(1) rotate(-45deg);
+    }
+    40% {
+        transform:scale(1) rotate(-45deg);
+    }
+    45% {
+         transform:scale(1.1) rotate(-45deg);
+    }
+    50% {
+         transform:scale(1) rotate(-45deg);
+    }
+    55% {
+         transform:scale(1.1) rotate(-45deg);
+    }
+    60% {
+         transform:scale(1) rotate(-45deg);
+    }
+    100% {
+        transform:scale(1) rotate(-45deg);
+    }
+}
+.box1 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#ff65d9;
+    border-radius:50%;
+}
+.box2{
+    position:absolute;
+    background:#ff65d9;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+.box3 {
+    background:#ff65d9;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:50%;
+    left:0;
+}

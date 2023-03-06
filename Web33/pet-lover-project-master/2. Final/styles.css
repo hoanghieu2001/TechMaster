@@ -1,0 +1,573 @@
+:root {
+  --primary-color: #ed6436;
+  --primary-color-hover: #ec5826;
+  --secondary-color: #65c178;
+  --secondary-color-hover: #59bc6d;
+  --background-grey-color: #f2f2f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-size: 5.6rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1.6rem;
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a button {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+/* UTILITIES CLASSES */
+.rounded {
+  border-radius: 6px;
+}
+
+.section-padding {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+}
+
+.bg-gray {
+  background-color: var(--background-grey-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* REUSABLE COMPONENTS */
+.btn {
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 6px;
+}
+
+.btn-full {
+  width: 100%;
+  padding: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color-hover);
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.heading-sm {
+  font-size: 2.4rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.heading-lg {
+  margin-bottom: 1.6rem;
+}
+
+.heading-lg .colored {
+  color: var(--primary-color);
+}
+
+.paragraph {
+  margin-bottom: 2.4rem;
+}
+
+.link-text {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.link-text:hover {
+  color: var(--primary-color-hover);
+  text-decoration: underline;
+}
+
+.team-members-section h2,
+.services-section h2,
+.pricing-section h2 {
+  margin-bottom: 4.2rem;
+}
+
+/* HEADER */
+/* Header top */
+.header-top {
+  display: flex;
+  padding: 1.6rem 4.8rem;
+  justify-content: space-between;
+}
+
+.page-logo {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.page-logo .logo-primary {
+  color: var(--primary-color);
+}
+
+.header-info {
+  display: flex;
+}
+
+.header-info-item {
+  text-align: center;
+}
+
+.header-info-item h6 {
+  margin-bottom: 0.8rem;
+}
+
+.vertical-ruler {
+  background-color: #dedede;
+  width: 1px;
+  margin: 0 1.8rem;
+}
+
+/* Header bottom */
+.header-bottom {
+  padding: 0 4.8rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.header-nav a {
+  display: inline-block;
+  padding: 3rem 2rem;
+}
+
+.header-nav a.active {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.header-nav a:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.header-bottom .header-btn-link {
+  align-self: center;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: url("./src/images/hero.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.12);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hero-content h3,
+.hero-content h1 {
+  margin-bottom: 1.6rem;
+}
+
+.call-to-action {
+  margin-top: 5.4rem;
+}
+
+.call-to-action a:first-child {
+  margin-right: 0.8rem;
+}
+
+/* BOOKING SECTION */
+.booking-content {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  column-gap: 6rem;
+}
+
+.booking-form {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 0 4.8rem;
+  justify-content: center;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 1.2rem 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.booking-form button {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #2a2a2a;
+}
+
+.booking-features {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.8rem;
+}
+
+.booking-feature-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.booking-feature-title img {
+  width: 4rem;
+  margin-right: 1.6rem;
+}
+
+/* ABOUT US SECTION */
+.about-us-section {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+.about-us-info h5 {
+  margin-bottom: 1.6rem;
+}
+
+.about-us-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-us-gallery img:first-child {
+  grid-column: 1 / span 2;
+}
+
+.about-us-list {
+  margin-bottom: 2.8rem;
+}
+
+.about-us-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.about-us-list i {
+  color: var(--secondary-color);
+  font-size: 2.4rem;
+  margin-right: 1.2rem;
+}
+
+.about-us-list h5 {
+  margin-bottom: 0;
+}
+
+/* SERVICES SECTION */
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.services-list li {
+  background-color: #fff;
+  padding: 4.8rem;
+}
+
+.services-list img {
+  width: 7.2rem;
+  height: 7.2rem;
+  margin-bottom: 1.6rem;
+}
+
+/* WHY US SECTION */
+.why-us-section {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+/* PRICING PLANS SECTION */
+.pricing-plans-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3.2rem;
+}
+
+.pricing-plans-list .plan-price {
+  aspect-ratio: 5 / 3;
+}
+
+.pricing-plans-list li:nth-child(1) .plan-price {
+  background-image: url("./src/images/price-1.jpg");
+}
+
+.pricing-plans-list li:nth-child(2) .plan-price {
+  background-image: url("./src/images/price-2.jpg");
+}
+
+.pricing-plans-list li:nth-child(3) .plan-price {
+  background-image: url("./src/images/price-3.jpg");
+}
+
+.pricing-plans-list .plan-price-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing-plans-list .plan-price.basic h3,
+.pricing-plans-list .plan-price.premium h3 {
+  color: var(--primary-color);
+}
+
+.pricing-plans-list .plan-price.standard h3 {
+  color: var(--secondary-color);
+}
+
+.plan-price-content {
+  color: #fff;
+}
+
+.plan-price-content .price-currency {
+  font-size: 2.2rem;
+}
+
+.plan-price-content .price-number {
+  font-size: 5.6rem;
+  font-weight: 800;
+}
+
+.plans-features {
+  padding: 2.4rem 0;
+  background-color: #fff;
+}
+
+.plans-features li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.plans-features li:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.plans-features i {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+}
+
+.plans-features .fa-check {
+  color: #2ecc71;
+}
+
+.plans-features .fa-xmark {
+  color: #c0392b;
+}
+
+/* TEAM MEMBER SECTION */
+.team-members-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.2rem;
+}
+
+.team-members-list li {
+  --info-card-height: 8.6rem;
+  --info-card-trans: -8.6rem;
+  overflow: hidden;
+}
+
+.team-members-list li:hover .member-info {
+  transform: translateY(var(--info-card-trans));
+}
+
+.team-member-pic img {
+  display: block;
+}
+
+.member-info-wrapper {
+  height: var(--info-card-height);
+  overflow: hidden;
+}
+
+.member-info {
+  background-color: var(--background-grey-color);
+  text-align: center;
+  transition: all 0.6s;
+}
+
+.member-info .title,
+.member-info .social {
+  height: var(--info-card-height);
+}
+
+.member-info .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member-info h5 {
+  margin-bottom: 0.6rem;
+}
+
+.member-info .social {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.member-info .social a {
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  height: 3.6rem;
+  width: 3.6rem;
+  color: var(--primary-color);
+}
+
+.member-info .social a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.member-info .social i {
+  font-size: 2.1rem;
+  line-height: 3.6rem;
+}
+
+/* PAGE FOOTER */
+.page-footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.page-footer-content {
+  display: flex;
+  gap: 7.2rem;
+}
+
+.page-footer-content h2 {
+  margin-bottom: 1.6rem;
+}
+
+.page-footer-content h5 {
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+}
+
+.footer-info {
+  width: 360px;
+}
+
+.footer-list li {
+  margin: 0.8rem 0;
+}
+
+.footer-list i {
+  margin-right: 0.6rem;
+}
+
+.footer-list .fa-chevron-right {
+  font-size: 1.2rem;
+}
+
+.footer-list .footer-link:hover {
+  text-decoration: underline;
+}

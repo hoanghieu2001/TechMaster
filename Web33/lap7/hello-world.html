@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h3, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wavy {
+        display: flex;
+      }
+      .character {
+        animation: wavy 2s var(--delay) infinite;
+      }
+      /* .character.character:nth-shlid(2) {
+        animation-delay: 2s;
+      } */
+
+      @keyframes wavy {
+        0% {
+          transform: translate(0);
+        }
+        45% {
+          transform: translate(0, 16px);
+        }
+        55% {
+          transform: translate(0, 19px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h3>
+      <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>,</span>
+       <span>W</span><span>o</span><span>r</span><span>l</span><span>d</span><span>.</span>
+    </h3> -->
+    <div class="parent">
+      <h1 class="wavy">
+        <span class="character" style="--delay: 0s">H</span>
+        <span class="character" style="--delay: 0.05s">e</span>
+        <span class="character" style="--delay: 0.1s">l</span>
+        <span class="character" style="--delay: 0.15s">l</span>
+        <span class="character" style="--delay: 0.2s">o</span>
+        <span class="character" style="--delay: 0.25s">o</span>
+        <span class="character" style="--delay: 0.3s">W</span>
+        <span class="character" style="--delay: 0.35s">o</span>
+        <span class="character" style="--delay: 0.4s">r</span>
+        <span class="character" style="--delay: 0.45s">l</span>
+        <span class="character" style="--delay: 0.5s">d</span>
+      </h1>
+    </div>
+    <blockquote
+      class="tiktok-embed"
+      cite="https://www.tiktok.com/@missgrand2021.thuytien/video/7197395273235090715"
+      data-video-id="7197395273235090715"
+      style="max-width: 605px; min-width: 325px"
+    >
+      <section>
+        <a
+          target="_blank"
+          title="@missgrand2021.thuytien"
+          href="https://www.tiktok.com/@missgrand2021.thuytien?refer=embed"
+          >@missgrand2021.thuytien</a
+        >
+        Là đều dữ chưa
+        <a
+          title="nguyenthucthuytien"
+          target="_blank"
+          href="https://www.tiktok.com/tag/nguyenthucthuytien?refer=embed"
+          >#nguyenthucthuytien</a
+        >
+        <a
+          target="_blank"
+          title="♬ nhạc nền  - Ngoc Mai"
+          href="https://www.tiktok.com/music/nhạc-nền-Ngoc-Mai-7194491304791853851?refer=embed"
+          >♬ nhạc nền - Ngoc Mai</a
+        >
+      </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </body>
+</html>
