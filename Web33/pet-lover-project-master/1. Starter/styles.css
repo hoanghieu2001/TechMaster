@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-size: 1.6rem;
+  background-color: #f2f2f2;
 }
 /* UTILITES CLASS */
 .container {
@@ -55,6 +56,13 @@ h2 {
   font-weight: 900;
   margin: 0px 0px 16px;
 }
+h3 {
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px 0px 16px;
+  text-align: center;
+}
 h4 {
   color: var(--secondary-color);
   font-family: Nunito;
@@ -93,7 +101,9 @@ p.paragraph {
 li {
   list-style: none;
 }
-
+.text-center {
+  text-align: center;
+}
 /* Header */
 /* Header-top */
 .header-top {
@@ -311,14 +321,37 @@ li > i.fa-check-double {
   margin: 0px 12px 0px 12px;
   margin-bottom: 8px;
 }
- .about-us-gallery{
+.about-us-gallery {
   /* display: flex; */
   width: 433px;
   height: 455px;
-} 
+}
 /* .about-us-gallery img:first-child {
   grid-column:1 / span 2;
 } */
 /* .about >img{
   display: flex;
 } */
+
+.list-item {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+    background-color: #ffffff;
+}
+.image {
+  margin-top: 43px;
+  margin-bottom: 22px;
+}
+.item p{
+  margin: 0 48px;
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+.item a{
+  margin-bottom: 48px;
+
+}
+.link-text{
+  color: var(--primary-color);
+  
+}
