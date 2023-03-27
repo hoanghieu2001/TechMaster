@@ -59,23 +59,30 @@ console.log(arr2);
 arr2.pop(2);
 console.log(arr2);
 
+// Tính tổng các phần tử trong mảng số
 function sumOfArray(arr) {
-  let tong = 0;
+  // Code
+  let sum = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    tong += arr[i];
+    sum += arr[i];
   }
-  return tong;
+
+  return sum; // Kết quả
 }
+
 console.log(sumOfArray([1, 2, 3, 4, 5, 6]));
 
+// Tính trung bình cộng các số trong một mảng
 function averageOfArray(arr) {
-  let tbc = 0;
-  tbc = sumOfArray(arr) / arr.length;
-  return tbc;
+  // Code
+  return sumOfArray(arr) / arr.length;
 }
-console.log(averageOfArray([1, 2, 4, 5, 5]));
 
+console.log(averageOfArray([1, 2, 3, 4, 5]));
+
+// Tìm số lớn nhất trong mảng số
+// Giả sử mảng chưa được sắp xếp và mỗi giá trị chỉ xuất hiện 1 lần
 function findMax(arr) {
   // Code
 
@@ -97,21 +104,60 @@ function findMax(arr) {
 console.log(findMax([9, 10, -1, 5, 15, 2, 0]));
 console.log(findMax([-4, -5, -3, -2, -1]));
 
-function isAscending(arr) {
-  for (
-    i = 0;
-    i < arr.length - 1;
-    i++ // so sánh số hiện tại và số tiếp theo // Nếu số hiện tại mà lớn hơn số sau nó
-  ) {
-    if (arr[i] > arr[i + 1]) return false;
+// Tìm số nhỏ nhất trong 1  mảng số
+// Giả sử mảng chưa được sắp xếp và mỗi giá trị chỉ xuất hiện 1 lần
+function findMin(arr) {
+  // Code
 
-    //thì phá vỡ quy tắc
-    // trả về false
+  // Coi như quả táo đầu tiên là quả nhỏ nhất
+  let min = arr[0];
+
+  // Nhặt từng quả táo lên xem
+  for (let value of arr) {
+    // Nếu quả táo này nhỏ hơn quả min hiện tại
+    if (value < min) {
+      // Giữ quả này
+      min = value;
+    }
   }
+
+  // Sau khi kiểm tra hết táo trong giỏ
+  // Thì tìm đc quả nhỏ nhất
+  return min; // Kết quả
 }
 
-console.log(isAscending([1, 3, 1, 3]));
+// Viết hàm kiểm tra xem một mảng số có phải mảng tăng dần hay không
+// Mảng tăng dần nghĩa là các phần tử có giá trị tăng dần
+function isAscending(arr) {
+  // Xem xét từng số 1
+  for (let i = 0; i < arr.length - 1; i++) {
+    // So sánh số hiện tại và số tiếp theo
+    // Nếu số hiện tại mà lớn hơn số sau nó
+    if (arr[i] > arr[i + 1]) {
+      // Thì phá vỡ quy tắc
+      // Trả về false
+      return false;
+    }
+  }
 
+  // Sau khi xem xét hết các số
+  // Mà tất cả đều hợp lệ
+  // Thì trả về true
+  return true; // Kết quả
+}
+console.log(isAscending([1, 2, 3, 4]));
+
+// Viết hàm kiểm tra xem một mảng số có phải mảng giảm dần hay không
+// Mảng giảm dần nghĩa là các phần tử có giá trị giảm dần
+function isDescending(arr) {
+  // Code
+
+  return; // Kết quả
+}
+
+// Viết hàm để loại bỏ các phần tử trùng nhau trong 1 mảng
+// Giữ 1 số
+// Kết quả phản ảnh trực tiếp trong mảng đầu vào
 function removeDuplicate(arr) {
   let dodai = arr.length;
 
@@ -135,36 +181,49 @@ function removeDuplicate(arr) {
 }
 console.log(removeDuplicate([1, 2, 1, 1]));
 
-console.log(removeDuplicate([1, 2, 4, 5, 43, 2, 1, 2]));
-
 function swap(arr, i, j) {
   let temp = arr[i];
   arr[i] = arr[j];
   arr[j] = temp;
 }
 
+// Viết hàm đảo ngược thứ tự các phần tử trong 1 mảng
+// Kết quả phản ảnh trực tiếp trong mảng đầu vào
 function reverse(arr) {
+  // Code
   // Duyệt từ đầu cho đến giữa mảng
-  for (i = 0; i < arr.length / 2; i++) {
+  for (let i = 0; i < arr.length / 2; i++) {
     // Với mỗi phần tử, đổi chỗ của nó cho phần tử đối xứng phía sau
     let j = arr.length - i - 1;
     swap(arr, i, j);
   }
-  return arr;
-}
-console.log(reverse([1, 2, 4, 5, 6]));
 
-function filterEvebNumber(arr) {
+  return arr; // Kết quả
+}
+
+console.log(reverse([1, 2, 3, 4, 5]));
+
+// Viết hàm để lọc ra các số dương trong 1 mảng số
+// Kết quả trả về là một mảng mới
+function filterEvenNumber(arr) {
+  // Tạo một mảng mới chứa các số dương
   let newArr = [];
-  for (i = 0; i < arr.length; i++) {
+
+  // Duyệt qua từng số
+  for (let i = 0; i < arr.length; i++) {
+    // Nếu nó là số dương
     if (arr[i] > 0) {
+      // Thì push vào mảng mới
       newArr.push(arr[i]);
     }
   }
-  return newArray;
-}
-console(filterEvebNumber([-2, 4, -3, 4, -3]));
 
+  // Sau khi duyệt qua hết các số, thì trả về mảng kết quả
+  return newArr; // Kết quả
+}
+console.log(filterEvenNumber([-2, 3, 4, 5, -1, -4, 0]));
+
+// Viết hàm kiểm tra xem một mảng có chứa bất kỳ số nào là số nguyên tố hay không
 function isPrime(n) {
   // Số âm hoặc 1 thì không phải số nguyên tố
   if (n < 2) return false;
@@ -197,15 +256,35 @@ function hasPrime(arr) {
 // Gọi Hàm
 console.log(hasPrime([1, 4, 6, 12]));
 
+// Viết hàm để bình phương tất cả giá trị trong mảng
+// Kết quả trả về là một mảng mới
+function squareAllElement(arr) {
+  // Code
+  // Tạo 1 mảng mới chứa kết quả
+  let result = [];
 
-function squareAltlElement(arr){
-    // tạo 1 mảng mới chứa kết quả
-    let result = [];
-    //Duyệt qua từng phần tử
-    for(let value of arr){
-        //Tính bình phương
-        let square = value **2;
-    }
+  // Duyệt qua từng phần tử
+  for (let value of arr) {
+    // Tính bình phương
+    let square = value ** 2;
+
+    // Push vào mảng mới
+    result.push(square);
+  }
+
+  // Return kết quả
+  return result; // Kết quả
 }
 
-// bài về nhà viết chi tiết Comment chô từng câu lệnh 1
+console.log(squareAllElement([1, 2, 3, 4, 5]));
+
+// Bài về nhà
+// Viết chi tiết comment cho từng câu lệnh 1
+
+// Tìm số nguyên tố trong mảng số - arr
+// Nếu không có thì trả về null
+let result = null;
+
+result = songuyento;
+
+return result;
