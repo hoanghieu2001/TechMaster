@@ -98,21 +98,21 @@ const evenNumbers = y.filter((i) => {
 });
 console.log(evenNumbers);
 
-let removeKey = [
-  { name: "Ba", age: 31 },
-  { name: "Mai Anh", age: 30 },
-];
-function removeKey(arr, key) {
-  const newArr = [...arr];
-  newArr.forEach((value) => delete value[key]);
-  return newArr;
-}
-console.log(
-  removeKey([
-    { name: "Ba", age: 31 },
-    { name: "Mai Anh", age: 30 },
-  ])
-);
-arr.forEach(function (n) {
-  console.log(n * 9);
-});
+// let removeKey = [
+//   { name: "Ba", age: 31 },
+//   { name: "Mai Anh", age: 30 },
+// ];
+// function removeKey(arr, key) {
+//   const newArr = [...arr];
+//   newArr.forEach((value) => delete value[key]);
+//   return newArr;
+// }
+// console.log(
+//   removeKey([
+//     { name: "Ba", age: 31 },
+//     { name: "Mai Anh", age: 30 },
+//   ])
+// );
+// arr.forEach(function (n) {
+//   console.log(n * 9);
+// });
